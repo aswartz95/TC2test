@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TC2 Show Goats</title>
+    <style>
+        body {
+            font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif"
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+        header, footer {
+            background-image: url('images/simply-summer-landscape.jpg');
+            background-size: contain;
+            color: white;
+            padding: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            width: 100px;
+            height: auto;
+        }
+        nav {
+            background-color: #333;
+            width: 100%;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .thank-you {
+            margin: 20px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        .about-us {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .about-us img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .appointment-section {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border: 1px solid #ddd;
+            width: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .appointment-section form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .appointment-section form label {
+            margin: 10px 0 5px 0;
+        }
+        .appointment-section form input, .appointment-section form textarea {
+            padding: 10px;
+            margin: 5px 0 10px 0;
+            width: 80%;
+            max-width: 400px;
+        }
+        .appointment-section form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .appointment-section form input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/tc2logo.jpg" alt="Logo" class="logo">
+        <h1>TC 2 Show Goats</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="goats-for-sale.html">Goats for Sale</a></li>
+            <li><a href="#appointment">Make Appointment</a></li>
+        </ul>
+    </nav>
+	<div class="thank-you">
+        <p>Thank you for visiting!</p>
+    </div>
+    <div class="container">
+        <section class="about-us">
+            <img src="images/koe.JPG" alt="About Us">
+            <h2>About Us</h2>
+            <p>Welcome to our Boer goat breeding business. We have been dedicated to raising high-quality Boer goats for over a decade. Our goal is to provide the best breeding stock and support to our customers. Whether you are looking for show goats, breeding stock, or companion animals, we are here to help you find the perfect Boer goat.</p>
+        </section>
+        <section id="appointment" class="appointment-section">
+            <h2>Make an Appointment</h2>
+            <p>Contact us to schedule a visit or consultation. We are here to help you with all your Boer goat breeding needs.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 TC2 Show Goats. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
